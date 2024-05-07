@@ -7,6 +7,10 @@
     <groupId>org.example</groupId>
     <artifactId>SpringCloud2020</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>cloud-provider-payment8001</module>
+        <module>cloud-api-commons</module>
+    </modules>
     <packaging>pom</packaging>
     <!-- 统一管理jar包版本 -->
     <properties>
@@ -78,6 +82,16 @@
                 <artifactId>lombok</artifactId>
                 <version>${lombok.version}</version>
                 <optional>true</optional>
+            </dependency>
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-boot-starter</artifactId>
+                <version>3.4.2</version>
+            </dependency>
+            <dependency>
+                <groupId>org.example</groupId>
+                <artifactId>cloud-api-commons</artifactId>
+                <scope>compile</scope>
             </dependency>
         </dependencies>
     </dependencyManagement>
