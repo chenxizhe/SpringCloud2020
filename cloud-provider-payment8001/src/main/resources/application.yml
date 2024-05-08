@@ -2,7 +2,7 @@ server:
   port: 8001
 spring:
   application:
-    name: payment-service
+    name: cloud-payment-service
   datasource:
     url: jdbc:mysql://121.40.136.222:3306/cloud?useSSL=false&charactEncoding=UTF-8&serverTimezone=UTC
     username: root
