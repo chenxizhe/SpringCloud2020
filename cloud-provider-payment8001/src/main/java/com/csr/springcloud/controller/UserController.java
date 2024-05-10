@@ -26,7 +26,7 @@ public class UserController {
     @PostMapping("/addUser")
     public CommonResult<User> create(@RequestBody User user) {
         this.userService.addUser(user);
-        return new CommonResult<>(0,"操作成功");
+        return new CommonResult<>(0,"操作成功"+ serverPort);
     }
 
     @GetMapping("/queryAllUser")
