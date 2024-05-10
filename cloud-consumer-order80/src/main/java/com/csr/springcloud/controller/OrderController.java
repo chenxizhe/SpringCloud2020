@@ -19,8 +19,8 @@ import javax.annotation.Resource;
 public class OrderController {
     @Resource
     private RestTemplate  restTemplate;
-    public static final String PAYMENT_URL = "http://localhost:8001";
-
+    //public static final String PAYMENT_URL = "http://localhost:8001";
+    public static final String PAYMENT_URL = "http://CLOUD-PAYMENT-SERVICE";
     @PostMapping("/users/addUser")
     public CommonResult<User> create(@RequestBody User user) {
         return restTemplate.postForObject(PAYMENT_URL + "/users/addUser", user, CommonResult.class);
